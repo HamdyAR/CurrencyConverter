@@ -34,4 +34,11 @@ if(st.button("Convert your naira")):
     st.text('The naira equivalent of ₦{} is {}{}.' .format(amount, currencySymbol, convertedCurrency))
     st.success("You have successfully converted your naira!")
         
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)        
         
