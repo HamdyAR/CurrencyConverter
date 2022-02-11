@@ -10,9 +10,6 @@ st.subheader("1 GBP = 568.10 naira")
 st.subheader("1 EUR = 478.59 naira")
 amount = st.number_input("Enter your amount in naira")
 desiredCurrency = st.radio("Select the currency that you want to convert naira to: ", ("dollars", "pounds", "euros"))
-dollarSymbol = "$"
-poundSymbol = "£"
-euroSymbol = "€"
 currencySymbols = ["$", "£", "€"] 
 if (desiredCurrency == "dollars"):
     try:
